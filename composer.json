@@ -30,7 +30,8 @@
     "psr/container": "1.1.1",
     "php-di/php-di": "6.3",
     "doctrine/annotations": "1.14",
-    "webman/think-orm": "^2.1"
+    "webman/think-orm": "^2.1",
+    "vlucas/phpdotenv": "^5.6"
   },
   "suggest": {
     "ext-event": "For better performance. "

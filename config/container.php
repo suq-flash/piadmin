@@ -12,4 +12,13 @@
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-return new Webman\Container;
+
+/**
+ * 基于PHP-DI实现依赖注入容器
+ */
+
+$builder = new \DI\ContainerBuilder();
+$builder->addDefinitions(config('dependence', []));
+$builder->useAutowiring(true);
+$builder->useAnnotations(true);
+return $builder->build();

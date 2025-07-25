@@ -20,11 +20,11 @@ return [
             'tag_prefix' => getenv('REDIS_PREFIX') ?? 'pi:' . 'tag:',
             // 连接池配置
             'pool' => [
-                'max_connections' => getenv('REDIS_POOL_MAX_CONNECTIONS') ?? 5, // 最大连接数
-                'min_connections' => getenv('REDIS_POOL_MIN_CONNECTIONS') ?? 3, // 最小连接数
-                'wait_timeout' => getenv('REDIS_POOL_MAX_WAIT_TIMEOUT') ?? 3,    // 从连接池获取连接等待超时时间
-                'idle_timeout' => getenv('REDIS_POOL_MAX_IDLE_TIMEOUT') ?? 60,   // 连接最大空闲时间，超过该时间会被回收
-                'heartbeat_interval' => getenv('REDIS_POOL_HEARTBEAT_INTERVAL') ?? 50, // 心跳检测间隔，需要小于60秒
+                'max_connections' => intval(getenv('REDIS_POOL_MAX_CONNECTIONS') ?? 5), // 最大连接数
+                'min_connections' => intval(getenv('REDIS_POOL_MIN_CONNECTIONS') ?? 3), // 最小连接数
+                'wait_timeout' => intval(getenv('REDIS_POOL_MAX_WAIT_TIMEOUT') ?? 3),    // 从连接池获取连接等待超时时间
+                'idle_timeout' => intval(getenv('REDIS_POOL_MAX_IDLE_TIMEOUT') ?? 60),   // 连接最大空闲时间，超过该时间会被回收
+                'heartbeat_interval' => intval(getenv('REDIS_POOL_HEARTBEAT_INTERVAL') ?? 50), // 心跳检测间隔，需要小于60秒
             ],
         ],
         // 文件缓存

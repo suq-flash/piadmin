@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf9bcec473a0068094840201189ba6f3",
+    "content-hash": "39a559b824679781c9965b4e94621a32",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2212,6 +2212,48 @@
                 "wiki": "http://www.workerman.net/doc/webman"
             },
             "time": "2022-09-21T10:20:07+00:00"
+        },
+        {
+            "name": "webman/think-cache",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webman-php/think-cache.git",
+                "reference": "807d86942850d5755bf296967abbae48f3b7e176"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webman-php/think-cache/zipball/807d86942850d5755bf296967abbae48f3b7e176",
+                "reference": "807d86942850d5755bf296967abbae48f3b7e176",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "psr/simple-cache": "^1.0|^2.0|^3.0",
+                "topthink/think-container": "^2.0|^3.0",
+                "workerman/webman-framework": "^2.1 || dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "support\\": "src/support",
+                    "Webman\\ThinkCache\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/webman-php/think-cache/issues",
+                "source": "https://github.com/webman-php/think-cache/tree/v2.1.1"
+            },
+            "time": "2025-03-18T06:08:37+00:00"
         },
         {
             "name": "webman/think-orm",

@@ -32,7 +32,8 @@
     "doctrine/annotations": "1.14",
     "webman/think-orm": "^2.1",
     "vlucas/phpdotenv": "^5.6",
-    "webman/console": "1.2.13"
+    "webman/console": "1.2.13",
+    "webman/think-cache": "^2.1"
   },
   "suggest": {
     "ext-event": "For better performance. "

@@ -28,6 +28,10 @@ class Install
         if($menus = static::getMenus()) {
             Menu::import($menus);
         }
+
+        // TODO 处理env文件，修改config/think-orm.php,redis.php,cache.php配置从env获取
+
+
     }
 
     /**

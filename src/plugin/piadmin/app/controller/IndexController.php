@@ -9,7 +9,7 @@ class IndexController
 
     public function index()
     {
-        return view('index/index', ['name' => 'piadmin']);
+        return success('ok');
     }
 
 }

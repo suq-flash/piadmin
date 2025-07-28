@@ -1,6 +1,6 @@
 <?php
 
-namespace Suq\Piadmin;
+namespace Suqflash\Piadmin;
 
 class Install
 {

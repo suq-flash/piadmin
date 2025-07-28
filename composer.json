@@ -1,8 +1,8 @@
 {
-  "name": "suq/piadmin",
+  "name": "suqflash/piadmin",
   "type": "library",
   "license": "MIT",
-  "description": "Webman plugin suq/piadmin",
+  "description": "Webman plugin suqflash/piadmin",
   "require": {
     "php": ">=8.1",
     "webman/think-orm": "^2.1",
@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Suq\\Piadmin\\": "src"
+      "Suqflash\\Piadmin\\": "src"
     }
   }
 }

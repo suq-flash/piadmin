@@ -1,5 +1,6 @@
 <?php
 
 return [
-    '' => support\exception\Handler::class,
+    //'' => support\exception\Handler::class,
+    '' => \plugin\piadmin\exception\ExceptionHandler::class
 ];

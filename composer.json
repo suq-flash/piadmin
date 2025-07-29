@@ -10,6 +10,7 @@
     "webman/redis": "^2.1",
     "webman/captcha": "^1.0",
     "webman/event": "^1.0",
+    "webman/console": "^2.1.8",
     "workerman/crontab": "^1.0",
     "tinywan/jwt": "^1.11",
     "tinywan/storage": "^1.1",

@@ -9,7 +9,11 @@ class IndexController
 
     public function index()
     {
-        return success('ok');
+        // 切换多语言
+        //locale('en');
+
+        // 使用多语言
+        return success([],trans(500));
     }
 
 }

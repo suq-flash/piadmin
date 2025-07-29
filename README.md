@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <title>Pi-Admin 安装说明</title>
-  <style>
-    body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      font-size: 2.2em;
-      color: #2c3e50;
-    }
-    h2 {
-      color: #34495e;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 6px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    code {
-      background-color: #eee;
-      padding: 2px 4px;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-    pre {
-      background-color: #f3f3f3;
-      padding: 12px;
-      border-radius: 4px;
-      overflow-x: auto;
-    }
-  </style>
-</head>
+
 <body>
 
   <h1>🚀 Pi-Admin 后台管理系统</h1>
@@ -76,4 +36,3 @@
   <p>文档正在整理中，敬请期待。如需提前了解，可直接阅读源码。</p>
 
 </body>
-</html>

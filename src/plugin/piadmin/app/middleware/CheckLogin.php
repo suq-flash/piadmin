@@ -18,10 +18,15 @@ class CheckLogin implements MiddlewareInterface
         if (!in_array($request->action, $noNeedLogin)) {
             try {
                 $token = JwtToken::getExtend();
+
+                // 获取登录信息
+
+                // 验证版本号是否一样
+
 //                $request->setHeader('check_login', true);
 //                $request->setHeader('check_admin', $token);
             } catch (\Throwable $e) {
-                return error([],'您的登录凭证错误或者已过期，请重新登录',[],403);
+                return error([],trans(403),[],403);
             }
         }
 

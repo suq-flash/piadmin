@@ -13,6 +13,7 @@ class IndexController
         //locale('en');
 
         // 使用多语言
+        return config('plugin.piadmin.piadmin.path');
         return success([],trans(500));
     }
 

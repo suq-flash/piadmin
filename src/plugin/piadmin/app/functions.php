@@ -44,3 +44,47 @@ if (!function_exists('error')) {
     }
 }
 
+if (!function_exists('isNotBlank')) {
+    /**
+     * 判非空
+     * @param $var
+     * @return bool
+     */
+    function isNotBlank($var): bool
+    {
+        return $var !== '' && $var !== null && $var !== false && $var !== [];
+    }
+}
+
+if (!function_exists('isBlank')) {
+    /**
+     * 判空
+     * @param $var
+     * @return bool
+     */
+    function isBlank($var): bool
+    {
+        return !isNotBlank($var);
+    }
+}
+
+if (!function_exists('get_column_for_key_array')) {
+    function get_column_for_key_array(array $data, string $key = 'id'): array
+    {
+        $item = [];
+        foreach ($data as $val) {
+            $keys = explode(',',$key);
+            $tmpKey = '';
+            foreach ($keys as $kv){
+                if (! array_key_exists($kv, $val)) {
+                    break;
+                }
+                $tmpKey .= $val[$kv] ?? null;
+            }
+            $item[$tmpKey] = $val;
+
+        }
+        return $item;
+    }
+}
+

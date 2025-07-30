@@ -20,7 +20,10 @@
     "ramsey/uuid": "^4.9.0",
     "openspout/openspout": "^4.0",
     "guzzlehttp/guzzle": "^7.9",
-    "symfony/translation": "^6.4.23 || ^7.3"
+    "symfony/translation": "^6.4.23 || ^7.3",
+    "psr/container": "^1.1.1",
+    "php-di/php-di": "^6.3",
+    "doctrine/annotations": "^1.14"
   },
   "autoload": {
     "psr-4": {
